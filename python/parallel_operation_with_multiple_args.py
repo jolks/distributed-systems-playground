@@ -2,7 +2,7 @@
 
 # -*- coding: utf-8 -*-
 
-from multiprocessing.dummy import Pool as ThreadPool
+from multiprocessing import Pool
 import math
 
 def f(x, y, z):
@@ -16,7 +16,7 @@ def f_star(multiple_args):
 
 # Set no. of workers in the pool. 
 # If the argument is not set, it defaults to machine no. of cores.
-p = ThreadPool() 
+p = Pool(4) # Initialize 4 parallel processes which can be seen using top command   
 
 # Regardless of input type, output will be list type
 print p.map(f_star, [[1, 2, 3], [3, 4, 5], [5, 6, 7]]) # list of lists input
