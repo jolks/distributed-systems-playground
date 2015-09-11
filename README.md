@@ -3,6 +3,7 @@ Distributed Systems Playground
 
 1. python
   * Just run it...
+  * `play_django_rq_project` - See the [README.md](https://github.com/jolks/distributed-systems-playground/blob/master/python/play_django_rq_project/README.md).
 
 2. zeromq - follows [Brokerless](http://zeromq.org/whitepapers:brokerless) design.
   * To get it running on Mac OS X (Yosemite):-
